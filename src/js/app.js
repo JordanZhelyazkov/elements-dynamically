@@ -7,11 +7,13 @@ window.addEventListener("DOMContentLoaded", () => {
   const button = document.querySelector(".button");
   button.addEventListener("click", () => {
     alert("💣");
-    for(let i = 0; i < 5; i++){
-      let createArticle = document.createElement('article');
-      createArticle.className = 'message';
-      createArticle.textContent = 'asd';
-      document.querySelector('body').appendChild(createArticle);
-    }
   });
 });
+document.querySelector('body').addEventListener('click', () => {
+  for(let i = 0; i < 5; i++){
+    let createArticle = document.createElement('article');
+    createArticle.className = 'message';
+    createArticle.textContent = 'asd';
+    document.querySelector('body').appendChild(createArticle);
+  }
+})
